@@ -5,7 +5,6 @@ import hero3 from '../../assests/hero-3.jpg';
 import hero4 from '../../assests/hero-4.jpg';
 
 const HomeCarousel = () => {
-
   return (
     <div>
       <div className="carousel w-full md:max-h-screen min-h-screen">

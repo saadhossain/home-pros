@@ -8,7 +8,7 @@ const HomeProperty = ({ property }) => {
     return (
         <div>
             <div className="flex flex-col bg-white shadow-lg rounded-lg">
-                <img src={image} alt="" className="object-cover w-full rounded-t-lg" />
+                <img src={image} alt="" className="object-cover w-full h-[220px] rounded-t-lg duration-500 ease-in-out opacity-80 hover:opacity-100 cursor-pointer" />
                 <div className="p-5">
                     <h2 className="mb-2 text-xl font-semibold text-hpro2nd">{name}</h2>
                     <p className='flex items-center gap-2'><FiHome className='h-4 w-4 text-hpro'></FiHome> {location}</p>
