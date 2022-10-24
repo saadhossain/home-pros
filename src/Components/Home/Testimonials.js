@@ -1,5 +1,5 @@
 import React from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import {AiOutlineLine } from 'react-icons/ai';
 import person1 from '../../assests/testimonials/1.png';
 import person2 from '../../assests/testimonials/2.png';
 import person3 from '../../assests/testimonials/3.png';
@@ -63,9 +63,12 @@ const Testimonials = () => {
                 </div>
 
             </div>
-            <div className="flex justify-between w-full py-2 gap-2 text-white absolute top-[40%]">
-                <a href="#item1" className="bg-hpro2nd p-2 rounded-full"><IoIosArrowBack></IoIosArrowBack></a>
-                <a href="#item5" className="bg-hpro2nd p-2 rounded-full"><IoIosArrowForward></IoIosArrowForward></a>
+            <div className="flex justify-center gap-2 mb-5">
+                <a href="#item1" ><AiOutlineLine className='text-hpro2nd'></AiOutlineLine></a>
+                <a href="#item2"><AiOutlineLine className='text-hpro2nd'></AiOutlineLine></a>
+                <a href="#item3"><AiOutlineLine className='text-hpro2nd'></AiOutlineLine></a>
+                <a href="#item4"><AiOutlineLine className='text-hpro2nd'></AiOutlineLine></a>
+                <a href="#item5"><AiOutlineLine className='text-hpro2nd'></AiOutlineLine></a>
             </div>
         </div>
     );
