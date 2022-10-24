@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../Context/DataProvider';
+import FeatureVideo from './FeatureVideo';
 import HomeCarousel from './HomeCarousel';
 import HomeProperty from './HomeProperty';
 import PropertySearch from './PropertySearch';
@@ -15,6 +16,7 @@ const Home = () => {
                    properties.map(property => <HomeProperty key={property.id} property={property}></HomeProperty>) 
                 }
             </div>
+            <FeatureVideo></FeatureVideo>
         </div>
     );
 };
