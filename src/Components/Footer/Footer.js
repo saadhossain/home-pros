@@ -7,7 +7,7 @@ import {MdLocationOn} from 'react-icons/md'
 const Footer = () => {
     return (
         <div className='bg-hprohf text-white'>
-           <div className='w-10/12 mx-auto grid md:grid-cols-4 gap-10 py-10'>
+           <div className='w-10/12 mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 py-10'>
             <div>
                 <h1 className='text-xl font-bold'>Offers</h1>
                 <div className='my-5'>
