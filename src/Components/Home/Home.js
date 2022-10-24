@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { DataContext } from '../../Context/DataProvider';
+import AboutUsSection from './AboutUsSection';
 import FeatureVideo from './FeatureVideo';
 import HomeCarousel from './HomeCarousel';
 import HomeProperty from './HomeProperty';
@@ -13,10 +14,11 @@ const Home = () => {
             <PropertySearch></PropertySearch>
             <div className='w-10/12 mx-auto my-8 grid md:grid-cols-3 gap-5'>
                 {
-                   properties.map(property => <HomeProperty key={property.id} property={property}></HomeProperty>) 
+                    properties.map(property => <HomeProperty key={property.id} property={property}></HomeProperty>)
                 }
             </div>
             <FeatureVideo></FeatureVideo>
+            <AboutUsSection></AboutUsSection>
         </div>
     );
 };
