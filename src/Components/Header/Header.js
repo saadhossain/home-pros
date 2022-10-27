@@ -19,7 +19,7 @@ const Header = () => {
                                 <li><Link to='/login'>Login</Link></li>
                             </ul>
                         </div>
-                        <Link className="btn btn-ghost normal-case text-xl">
+                        <Link  to='/' className="btn btn-ghost normal-case text-xl">
                             <span className='flex items-center'>
                                 <img src={logo} alt='' className='w-10' />
                                 <h2 className='text-xl font-bold'>HomePros</h2>
