@@ -1,7 +1,7 @@
 import React from 'react';
-import {FiHome} from 'react-icons/fi'
-import {FaBath, FaBed, FaSwimmingPool} from 'react-icons/fa'
-import {SiHomeassistantcommunitystore} from 'react-icons/si'
+import { FaBath, FaBed, FaSwimmingPool } from 'react-icons/fa';
+import { FiHome } from 'react-icons/fi';
+import { SiHomeassistantcommunitystore } from 'react-icons/si';
 
 const HomeProperty = ({ property }) => {
     const { name, image, location, feature, price } = property;
@@ -35,6 +35,43 @@ const HomeProperty = ({ property }) => {
                         </span>
                     </div>
                     <h2 className="mb-1 text-xl font-semibold text-hpro">Price : ${price}</h2>
+                    <div className='flex justify-between items-center'>
+                        <a href='callto:019289382'><button className='bg-hpro2nd text-white py-2 px-3 rounded font-bold'>Call for Qoute</button></a>
+                        <label htmlFor="qoute-modal" className='bg-hpro text-white py-2 px-3 rounded font-bold cursor-pointer'>Send Email</label>
+                    </div>
+                </div>
+            </div>
+
+            {/* Modal starts here */}
+            <input type="checkbox" id="qoute-modal" className="modal-toggle" />
+            <div className="modal">
+                <div className="modal-box bg-hprohf text-white">
+                    <div className="flex flex-col max-w-md p-2 rounded-md">
+                        <form novalidate="" action="" className="space-y-5 ng-untouched ng-pristine ng-valid">
+                            <div className="space-y-1">
+                                <div>
+                                    <label for="fullname" className="block mb-2 text-md">Full Name</label>
+                                    <input type="text" name="fullname" id="fullname" placeholder="Enter Your Full Name" className="w-full px-3 py-2 border rounded-md" />
+                                </div>
+                                <div>
+                                    <label for="email" className="block mb-2 text-md">Email address</label>
+                                    <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" className="w-full px-3 py-2 border rounded-md" />
+                                </div>
+                                <div>
+                                    <div className="flex justify-between mb-2">
+                                        <label for="message" className="text-md">Your Message</label>
+                                    </div>
+                                    <textarea rows={3} name="message" id="message" placeholder="Leave Your message here..." className="w-full px-3 py-2 border rounded-md" />
+                                </div>
+                            </div>
+                            <div className='mt-1'>
+                                <button type="button" className="w-full px-8 py-3 font-semibold rounded-md bg-hpro2nd">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="modal-action">
+                        <label htmlFor="qoute-modal" className="btn">Close!</label>
+                    </div>
                 </div>
             </div>
         </div>
