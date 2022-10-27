@@ -36,7 +36,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <Link className="bg-hpro2nd border-none py-2 px-3 rounded font-semibold">Get Started</Link>
+                        <Link to='/submit_property' className="bg-hpro2nd border-none py-2 px-3 rounded font-semibold">Get Started</Link>
                     </div>
                 </div>
             </div>
